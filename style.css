@@ -1,0 +1,36 @@
+#container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-areas:
+    "cabecalho cabecalho"
+    "esquerda conteudo"
+    "esquerda rodape";
+  grid-template-columns: 20% auto;
+  grid-template-rows: 120px 70vh 80px;
+}
+#cabecalho {
+  grid-area: cabecalho;
+  border: 1px solid #000;
+  background-color: #ebfcfb;
+  color: #336699;
+  font-weight: bold;
+  text-align: center;
+}
+#conteudo {
+  grid-area: conteudo;
+  color: #0a0232;
+  font-weight: bold;
+  border: 1px dashed #000;
+  background-color: #d2ceb1;
+  text-align: center;
+}
+#rodape {
+  grid-area: rodape;
+  border: 1px dashed #000;
+}
+#esquerda {
+  grid-area: esquerda;
+  border: 1px dashed #000;
+  background-color: #d2ceb1;
+}
